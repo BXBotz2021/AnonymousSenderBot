@@ -9,6 +9,6 @@ async def start(anonbot, message):
     print("/start")
     await anonbot.send_message(
         message.chat.id,
-        Data.START.format(message.from_user.mention),
+        Data.START(),
         reply_markup=InlineKeyboardMarkup(Data.buttons),
     )
