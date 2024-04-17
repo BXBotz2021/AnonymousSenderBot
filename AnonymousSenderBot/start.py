@@ -8,9 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup
 async def start(anonbot, update)
     text = START_TEXT.format(update.from_user.id)
     await update.reply_text(
-        text="hey👋 welcome
-
-        bot started bro 😁🙌",
+        text='hey bro!welcome bot started!'.
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(Data.buttons),
     )
